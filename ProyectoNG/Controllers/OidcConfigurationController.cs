@@ -13,6 +13,7 @@ namespace ProyectoNG.Controllers
         {
             ClientRequestParametersProvider = clientRequestParametersProvider;
             _logger = logger;
+
         }
 
         public IClientRequestParametersProvider ClientRequestParametersProvider { get; }
