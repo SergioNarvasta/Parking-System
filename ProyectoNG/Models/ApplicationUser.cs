@@ -5,5 +5,7 @@ namespace ProyectoNG.Models
     public class ApplicationUser : IdentityUser
     {
 
+
+
     }
 }
