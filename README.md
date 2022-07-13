@@ -1,1 +1,1 @@
-# PharmSystem
+# Pharmacy System
