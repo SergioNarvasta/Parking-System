@@ -1,0 +1,41 @@
+﻿@model  IEnumerable<EjemploSIST.Models.Entidades.OrdenCompraDet>
+    <br> <br>
+    <h2>LISTADO ORDENES DE COMPRA - ASP.NET CORE 2.0 MVC</h2>
+    <br>
+
+    <p>
+        <a asp-action="Create">Crear Nueva Orden de Compra</a>
+    </p>
+    <table class="table table-hover">
+        <tr>
+            <th>idOCDet</th>
+            <th>Proveedor</th>
+            <th>Descripcion</th>
+            <th>CodigoRapido</th>
+            <th>UnidadMedida</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>FechaCreacion</th>
+            <th>FechaModificacion</th>
+            <th>Opciones</th>
+        </tr>
+    @foreach(var item in Model)
+        {
+        <tr class="warning">
+            <td>@item.idOrdenCompraDet</td>
+            <td>@item.OrdenCompraCab.RazonSocial</td>
+            <td>@item.Descripcion</td>
+            <td>@item.CodigoRapido</td>
+            <td>@item.UnidadMedida</td>
+            <td>@item.Cantidad</td>
+            <td>@item.Precio</td>
+            <td>@item.FechaCreacion</td>
+            <td>@item.FechaModificacion</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = @item.idOrdenCompraDet })||
+                @Html.ActionLink("Details", "Details", new { id = @item.idOrdenCompraDet }) ||
+                @Html.ActionLink("Delete","Delete",new {id=@item.idOrdenCompraDet})
+            </td>
+        </tr>
+        }
+        </table>
+

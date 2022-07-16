@@ -1,0 +1,38 @@
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.deps.json
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.runtimeconfig.json
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.runtimeconfig.dev.json
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.dll
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.pdb
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csprojAssemblyReference.cache
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csproj.CoreCompileInputs.cache
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfoInputs.cache
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfo.cs
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.dll
+C:\Users\ProgSeniorJhonar\source\repos\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.pdb
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.deps.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.runtimeconfig.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.runtimeconfig.dev.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\EjemploSIST.pdb
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csprojAssemblyReference.cache
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfoInputs.cache
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfo.cs
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.pdb
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\appsettings.Development.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\appsettings.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\bower.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\bundleconfig.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\en-US\EjemploSIST.resources.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\es-PE\EjemploSIST.resources.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\bin\Debug\netcoreapp2.0\fr-FR\EjemploSIST.resources.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.en-US.resources
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.es-PE.resources
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.fr-FR.resources
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csproj.GenerateResource.cache
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\en-US\EjemploSIST.resources.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\es-PE\EjemploSIST.resources.dll
+D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\fr-FR\EjemploSIST.resources.dll

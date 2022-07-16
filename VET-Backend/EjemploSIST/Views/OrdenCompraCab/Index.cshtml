@@ -1,0 +1,23 @@
+﻿
+@model IEnumerable<EjemploSIST.Models.Entidades.OrdenCompraCab>
+<br><br>
+<h2>LISTADO DE PROVEEDORES</h2>
+<br>
+<table class="table table-condensed">
+    <tr class="success">
+        <th>idOrdenCompraCab</th>
+        <th>RUC</th>
+        <th>RazonSocial</th>
+        <th>Direccion</th>
+    </tr>
+@foreach(var item in Model)
+    {
+    <tr>
+        <td>@item.idOrdenCompraCab</td>
+        <td>@item.RUC</td>
+        <td>@item.RazonSocial</td>
+        <td>@item.Direccion</td>
+    </tr>
+    }
+</table>
+
