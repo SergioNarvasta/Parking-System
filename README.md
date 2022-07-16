@@ -1,10 +1,13 @@
-Pharmaceutical Management System currently developed with .NET 6, Swagger, Entity Framework Core, Dapper, Angular13, SQL Server.
+
+Veterinary clinic software currently developed with C#, .NET 6,JasperReports,DevExpress Swagger,Razor, Entity Framework Core, SQL Server.
 Contains the modules:
 -User Management
 
 -Customer Management
 
 -Product Management
+
+-Services Management
 
 -Supplier Management
 
@@ -24,7 +27,5 @@ Contains the modules:
 
 -Reports
 
--Custom CRM
 
-
-Update: snarvasta 150722
+Update: snarvasta 100622
