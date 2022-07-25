@@ -11,7 +11,7 @@ namespace EjemploSIST.Controllers
 {
     public class OrdenCompraDetController : Controller
     {
-        
+
         [Authorize]
         public IActionResult Index()
         {
@@ -32,6 +32,7 @@ namespace EjemploSIST.Controllers
         {
             Entidad.idOrdenCompraDet = 0;
             Entidad.FechaCreacion = DateTime.Now;
+            
             var OC = new DAOrdenCompraDet();
             var model = OC.InsertOrdenCompraDet(Entidad);
             if (model > 0)
