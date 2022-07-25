@@ -11,6 +11,7 @@ namespace EjemploSIST.Controllers
 {
     public class OrdenCompraDetController : Controller
     {
+        
         [Authorize]
         public IActionResult Index()
         {
@@ -67,7 +68,6 @@ namespace EjemploSIST.Controllers
             {
                 return View();
             }
-
         }
     }
 }
