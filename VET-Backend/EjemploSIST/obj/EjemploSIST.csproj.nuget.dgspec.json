@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Randal\\Ingenieria de Sistemas\\VI Ciclo\\Herramientas de Desarrollo Web\\EjemploSIST\\EjemploSIST\\EjemploSIST.csproj": {}
+    "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj": {}
   },
   "projects": {
-    "D:\\Randal\\Ingenieria de Sistemas\\VI Ciclo\\Herramientas de Desarrollo Web\\EjemploSIST\\EjemploSIST\\EjemploSIST.csproj": {
+    "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Randal\\Ingenieria de Sistemas\\VI Ciclo\\Herramientas de Desarrollo Web\\EjemploSIST\\EjemploSIST\\EjemploSIST.csproj",
+        "projectUniqueName": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj",
         "projectName": "EjemploSIST",
-        "projectPath": "D:\\Randal\\Ingenieria de Sistemas\\VI Ciclo\\Herramientas de Desarrollo Web\\EjemploSIST\\EjemploSIST\\EjemploSIST.csproj",
-        "packagesPath": "C:\\Users\\randa\\.nuget\\packages\\",
-        "outputPath": "D:\\Randal\\Ingenieria de Sistemas\\VI Ciclo\\Herramientas de Desarrollo Web\\EjemploSIST\\EjemploSIST\\obj\\",
+        "projectPath": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj",
+        "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
+        "outputPath": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\randa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\snarvasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp2.0": {
+            "targetAlias": "netcoreapp2.0",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
+          "targetAlias": "netcoreapp2.0",
           "dependencies": {
             "Microsoft.AspNetCore.All": {
               "target": "Package",
@@ -68,11 +70,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
