@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pharmacy.Models.Entities
 {
@@ -11,9 +12,12 @@ namespace Pharmacy.Models.Entities
         public Double Subtotal  { get; set; }
         public Double IGV { get; set; }
 
-        public int CodProducto { get; set; }
-        public virtual Producto Producto { get; set; }
+        //ForeignKey Key
         public int CodVenta { get; set; }
         public virtual Venta Venta { get; set; }
+
+        //Referencia de Relacion 
+        public virtual ICollection<Producto> Producto { get; set; }
+
     }
 }

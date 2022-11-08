@@ -9,5 +9,9 @@ namespace Pharmacy.Data
             : base(options)
         {
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=HDVMSQLDES; Database=Z_Pharmacy; UserID=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
+        }
     }
 }

@@ -7,13 +7,13 @@ namespace Pharmacy.Models.Entities
         [Key]
         public int CodProducto { get; set; }
 
-        [Display(Name = "Codigo")]
-        [Required(ErrorMessage = "Debe de ingresar sus Codigo del producto")]
+        [Display(Name = "Correlativo")]
+        [Required(ErrorMessage = "Registre un correlativo")]
         [MaxLength(20, ErrorMessage = "El campo no debe de tener mas de 20 caracteres")]
         public string Correlativo { get; set; }
 
         [Display(Name = "Nombre")]
-        [Required(ErrorMessage = "Debe de ingresar sus Nombre del producto")]
+        [Required(ErrorMessage = "Debe de ingresar el Nombre del producto")]
         [MaxLength(60, ErrorMessage = "El campo no debe de tener mas de 60 caracteres")]
         public string Nombre { get; set; }
 
@@ -40,7 +40,7 @@ namespace Pharmacy.Models.Entities
         [Display(Name = "Stock")]
         [Required(ErrorMessage = "Debe de ingresar la cantidad del producto")]
         [MaxLength(10, ErrorMessage = "El campo no debe de tener mas de 10 caracteres")]
-        public decimal Stock { get; set; }
+        public decimal Stock { get; set; } = 0;
 
         [Display(Name = "Restriccion")]
         [Required(ErrorMessage = "Debe de ingresar 0 producto si el producto no tiene restriccion y 1 si lo tiene")]
@@ -48,10 +48,7 @@ namespace Pharmacy.Models.Entities
         public Boolean Restriccion { get; set; }
 
         //Foreign Key
-        public int CodLote { get; set; }
-        public virtual Lote Lote { get; set; }
-
-        public virtual ICollection<DetalleIngreso> DetalleIngreso { get; set; }
+        public int CodDetVenta { get; set; }
         public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
     }
 }
