@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Pharmacy.Models.Entities;
 
 namespace Pharmacy.Data
 {
@@ -13,5 +14,8 @@ namespace Pharmacy.Data
         {
             optionsBuilder.UseSqlServer("Server=HDVMSQLDES; Database=Z_Pharmacy; UserID=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
         }
+        public DbSet<Pharmacy.Models.Entities.Cliente> Cliente { get; set; }
+        public DbSet<Pharmacy.Models.Entities.Producto> Producto { get; set; }
+        public DbSet<Pharmacy.Models.Entities.Venta> Venta { get; set; }
     }
 }
