@@ -1,4 +1,7 @@
-Veterinary-Clinic System currently developed with C# .NET 6,DevExpress, Swagger, Entity Framework Core, Dapper,JasperReports, SQL Server. Contains the modules: -User Management
+Pharmacy System currently developed with C# .NET 6, Entity Framework Core,
+Dapper, DevExpress, Swagger, JasperReports, SQL Server. Contains the modules: 
+
+-User Management
 
 -Customer Management
 
@@ -26,4 +29,4 @@ Veterinary-Clinic System currently developed with C# .NET 6,DevExpress, Swagger,
 
 
 
-Update: snarvasta 150722
+Update: snarvasta 081122
