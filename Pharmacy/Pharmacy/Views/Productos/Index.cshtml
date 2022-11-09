@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Gestion de Productos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Registrar</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered">
+    <thead class="table-primary">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Correlativo)
@@ -73,9 +73,9 @@
                 @Html.DisplayFor(modelItem => item.CodDetVenta)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CodProducto">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CodProducto">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CodProducto">Delete</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.CodProducto">Edit</a> |
+                <a class="btn btn-warning" asp-action="Details" asp-route-id="@item.CodProducto">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CodProducto">Delete</a>
             </td>
         </tr>
 }

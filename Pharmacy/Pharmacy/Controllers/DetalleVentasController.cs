@@ -10,73 +10,73 @@ using Pharmacy.Models.Entities;
 
 namespace Pharmacy.Controllers
 {
-    public class ClientesController : Controller
+    public class DetalleVentasController : Controller
     {
         private readonly ApplicationDbContext _context;
-        public ClientesController(ApplicationDbContext context)
+
+        public DetalleVentasController(ApplicationDbContext context)
         {
             _context = context;
         }
+
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Cliente.ToListAsync());
+              return View(await _context.DetalleVenta.ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Cliente == null)
+            if (id == null || _context.DetalleVenta == null)
             {
                 return NotFound();
             }
 
-            var cliente = await _context.Cliente
-                .FirstOrDefaultAsync(m => m.CodCliente == id);
-            if (cliente == null)
+            var detalleVenta = await _context.DetalleVenta
+                .FirstOrDefaultAsync(m => m.CodDetVenta == id);
+            if (detalleVenta == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(detalleVenta);
         }
 
         public IActionResult Create()
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CodCliente,Nombres,DNI,RUC,RazonSocial,Direccion,Telefono,Correo,FechaReg")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("CodDetVenta,Cantidad,Precio,Subtotal,IGV,CodVenta")] DetalleVenta detalleVenta)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cliente);
+                _context.Add(detalleVenta);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            return View(detalleVenta);
         }
-
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Cliente == null)
+            if (id == null || _context.DetalleVenta == null)
             {
                 return NotFound();
             }
 
-            var cliente = await _context.Cliente.FindAsync(id);
-            if (cliente == null)
+            var detalleVenta = await _context.DetalleVenta.FindAsync(id);
+            if (detalleVenta == null)
             {
                 return NotFound();
             }
-            return View(cliente);
+            return View(detalleVenta);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CodCliente,Nombres,DNI,RUC,RazonSocial,Direccion,Telefono,Correo,FechaReg")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("CodDetVenta,Cantidad,Precio,Subtotal,IGV,CodVenta")] DetalleVenta detalleVenta)
         {
-            if (id != cliente.CodCliente)
+            if (id != detalleVenta.CodDetVenta)
             {
                 return NotFound();
             }
@@ -85,12 +85,12 @@ namespace Pharmacy.Controllers
             {
                 try
                 {
-                    _context.Update(cliente);
+                    _context.Update(detalleVenta);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClienteExists(cliente.CodCliente))
+                    if (!DetalleVentaExists(detalleVenta.CodDetVenta))
                     {
                         return NotFound();
                     }
@@ -101,46 +101,44 @@ namespace Pharmacy.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            return View(detalleVenta);
         }
-
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Cliente == null)
+            if (id == null || _context.DetalleVenta == null)
             {
                 return NotFound();
             }
 
-            var cliente = await _context.Cliente
-                .FirstOrDefaultAsync(m => m.CodCliente == id);
-            if (cliente == null)
+            var detalleVenta = await _context.DetalleVenta
+                .FirstOrDefaultAsync(m => m.CodDetVenta == id);
+            if (detalleVenta == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(detalleVenta);
         }
-
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Cliente == null)
+            if (_context.DetalleVenta == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Cliente'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.DetalleVenta'  is null.");
             }
-            var cliente = await _context.Cliente.FindAsync(id);
-            if (cliente != null)
+            var detalleVenta = await _context.DetalleVenta.FindAsync(id);
+            if (detalleVenta != null)
             {
-                _context.Cliente.Remove(cliente);
+                _context.DetalleVenta.Remove(detalleVenta);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        private bool ClienteExists(int id)
+        private bool DetalleVentaExists(int id)
         {
-          return _context.Cliente.Any(e => e.CodCliente == id);
+          return _context.DetalleVenta.Any(e => e.CodDetVenta == id);
         }
     }
 }

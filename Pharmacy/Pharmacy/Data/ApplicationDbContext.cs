@@ -12,10 +12,11 @@ namespace Pharmacy.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=HDVMSQLDES; Database=Z_Pharmacy; UserID=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
+            optionsBuilder.UseSqlServer("Server=HDVMSQLDES; Database=Z_Pharmacy; User=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
         }
         public DbSet<Pharmacy.Models.Entities.Cliente> Cliente { get; set; }
         public DbSet<Pharmacy.Models.Entities.Producto> Producto { get; set; }
         public DbSet<Pharmacy.Models.Entities.Venta> Venta { get; set; }
+        public DbSet<Pharmacy.Models.Entities.DetalleVenta> DetalleVenta { get; set; }
     }
 }

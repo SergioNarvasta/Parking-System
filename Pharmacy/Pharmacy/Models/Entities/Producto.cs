@@ -48,7 +48,7 @@ namespace Pharmacy.Models.Entities
         public Boolean Restriccion { get; set; }
 
         //Foreign Key
-        public int CodDetVenta { get; set; }
-        public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
+       public int CodDetVenta { get; set; }
+       public virtual ICollection<DetalleVenta> DetalleVenta { get; set; }
     }
 }

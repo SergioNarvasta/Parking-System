@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Gestion de Clientes</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Crear Nuevo</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered">
+    <thead class="table-info">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nombres)
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.FechaReg)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CodCliente">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CodCliente">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CodCliente">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.CodCliente">Edit</a> |
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.CodCliente">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CodCliente">Delete</a>
             </td>
         </tr>
 }
