@@ -39,7 +39,6 @@ namespace Pharmacy.Controllers
 
             return View(producto);
         }
-
         public IActionResult Create()
         {
             return View();
@@ -63,7 +62,6 @@ namespace Pharmacy.Controllers
             {
                 return NotFound();
             }
-
             var producto = await _context.Producto.FindAsync(id);
             if (producto == null)
             {

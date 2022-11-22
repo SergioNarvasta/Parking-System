@@ -18,12 +18,10 @@ namespace Pharmacy.Controllers
         {
             _context = context;
         }
-
         public async Task<IActionResult> Index()
         {
               return View(await _context.Venta.ToListAsync());
         }
-
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Venta == null)
@@ -44,7 +42,6 @@ namespace Pharmacy.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Codventa,Descuento,Total,Fecha,TipoPago,CodCliente")] Venta venta)
@@ -71,7 +68,6 @@ namespace Pharmacy.Controllers
             }
             return View(venta);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Codventa,Descuento,Total,Fecha,TipoPago,CodCliente")] Venta venta)
@@ -130,8 +126,7 @@ namespace Pharmacy.Controllers
             if (venta != null)
             {
                 _context.Venta.Remove(venta);
-            }
-            
+            }  
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
