@@ -36,3 +36,15 @@ D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\Ejemplo
 D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\en-US\EjemploSIST.resources.dll
 D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\es-PE\EjemploSIST.resources.dll
 D:\Randal\Ingenieria de Sistemas\VI Ciclo\Herramientas de Desarrollo Web\EjemploSIST\EjemploSIST\obj\Debug\netcoreapp2.0\fr-FR\EjemploSIST.resources.dll
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csproj.AssemblyReference.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.en-US.resources
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.es-PE.resources
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.Resource.Views.OrdenCompraDet.Index.fr-FR.resources
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csproj.GenerateResource.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.GeneratedMSBuildEditorConfig.editorconfig
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfoInputs.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.AssemblyInfo.cs
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.csproj.CoreCompileInputs.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.dll
+D:\Docs_Sergio\Z_PROYECTOS WEB\Project_SIST\Project_SIST\EjemploSIST\obj\Debug\netcoreapp2.0\EjemploSIST.pdb

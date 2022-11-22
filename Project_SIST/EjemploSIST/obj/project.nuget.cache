@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qinn54K5Aovmrl2D9shWz5Frt+5NfqQGaBQidU9rVSMcmI8MDCfY5YjAkT/6lB89pr8IEjj5ygs8IhzQ5jLg6w==",
+  "dgSpecHash": "hvOX/jQIhedHD85QbwSjFHuTqBI12XBY7yOsB67igtFTToGifFvC0oMesLkjw8cuI7FhhnK14bTD2WX3DI0eZg==",
   "success": true,
-  "projectFilePath": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj",
+  "projectFilePath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\EjemploSIST.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snarvasta\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\snarvasta\\.nuget\\packages\\microsoft.applicationinsights\\2.4.0\\microsoft.applicationinsights.2.4.0.nupkg.sha512",

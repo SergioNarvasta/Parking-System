@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj": {}
+    "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\EjemploSIST.csproj": {}
   },
   "projects": {
-    "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj": {
+    "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\EjemploSIST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj",
+        "projectUniqueName": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\EjemploSIST.csproj",
         "projectName": "EjemploSIST",
-        "projectPath": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\EjemploSIST.csproj",
+        "projectPath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\EjemploSIST.csproj",
         "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
-        "outputPath": "D:\\Docs_Sergio\\Project_SIST\\VET-Backend\\EjemploSIST\\obj\\",
+        "outputPath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Project_SIST\\EjemploSIST\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -75,7 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,21 +21,18 @@ namespace Pharmacy.Controllers
         {
               return View(await _context.Cliente.ToListAsync());
         }
-
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Cliente == null)
             {
                 return NotFound();
             }
-
             var cliente = await _context.Cliente
                 .FirstOrDefaultAsync(m => m.CodCliente == id);
             if (cliente == null)
             {
                 return NotFound();
             }
-
             return View(cliente);
         }
 
@@ -43,7 +40,6 @@ namespace Pharmacy.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CodCliente,Nombres,DNI,RUC,RazonSocial,Direccion,Telefono,Correo,FechaReg")] Cliente cliente)
@@ -56,14 +52,12 @@ namespace Pharmacy.Controllers
             }
             return View(cliente);
         }
-
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Cliente == null)
             {
                 return NotFound();
             }
-
             var cliente = await _context.Cliente.FindAsync(id);
             if (cliente == null)
             {
@@ -110,7 +104,6 @@ namespace Pharmacy.Controllers
             {
                 return NotFound();
             }
-
             var cliente = await _context.Cliente
                 .FirstOrDefaultAsync(m => m.CodCliente == id);
             if (cliente == null)
@@ -134,7 +127,6 @@ namespace Pharmacy.Controllers
             {
                 _context.Cliente.Remove(cliente);
             }
-            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

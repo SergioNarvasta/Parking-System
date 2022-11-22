@@ -10297,11 +10297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Docs_Sergio\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
+      "projectUniqueName": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
       "projectName": "Pharmacy",
-      "projectPath": "D:\\Docs_Sergio\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
+      "projectPath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
       "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
-      "outputPath": "D:\\Docs_Sergio\\Project_SIST\\Pharmacy\\Pharmacy\\obj\\",
+      "outputPath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Pharmacy\\Pharmacy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10379,7 +10379,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

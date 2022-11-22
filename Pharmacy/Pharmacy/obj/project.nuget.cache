@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/YbdfV/iXxcaKBRTTvjq2LxyTrpp9m8XCkUbHKEpYoHkC3/KNxoBHF/IOrc8RcGtxhRiU22lWH6J500XMEKoGA==",
+  "dgSpecHash": "mvI4FmgmU76voIIFZW4IkqZCPvf95Bps0qxTZK9mVfb2JEDQNhxQvkgRmoot0MHOF3QtyhyB+iZ1s1VDjvhNFw==",
   "success": true,
-  "projectFilePath": "D:\\Docs_Sergio\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
+  "projectFilePath": "D:\\Docs_Sergio\\Z_PROYECTOS WEB\\Project_SIST\\Pharmacy\\Pharmacy\\Pharmacy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snarvasta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\snarvasta\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
