@@ -21,6 +21,7 @@ namespace Pharmacy.Services
 
         Task<int> Registra_Venta(Venta venta)
     }
+    
     public class RepositorioVenta:IRepositorioVenta
     {
         private readonly string connectionString;
