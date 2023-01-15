@@ -6,46 +6,44 @@
 
 <h1 style="color: #1199EE;">Realizar Venta</h1>
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Descuento" class="control-label"></label>
-                <input asp-for="Descuento" class="form-control" />
-                <span asp-validation-for="Descuento" class="text-danger"></span>
+<p>Datos de Cliente</p>
+<div style="display: flex;flex-direction: row;">
+    <label>Nombres</label><input type="text"/>
+    <label>DNI</label><input type="text"/>
+    <label>Direccion</label><input type="text"/>
+    <label>Telefono</label><input type="text"/>
+</div><br>
+<button id="btn_abrir_modal_cco" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#Modal_Prd">Seleccione Producto </button>                           
+<div class="modal" id="Modal_Prd">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title ms-5">Listado de Productos</h4>
+                <input id="busqueda_ayuda_cco" class="form-control light-table-filter" data-table="order-table-cco" type="text" placeholder="Filtrar.." style="width:380px;" />
             </div>
-            <div class="form-group">
-                <label asp-for="Total" class="control-label"></label>
-                <input asp-for="Total" class="form-control" />
-                <span asp-validation-for="Total" class="text-danger"></span>
+            <div class="modal-body" style="cursor:pointer">
+                <table class="table table-bordered ms-4 table-hover order-table-cco">
+                    <tr class="table-primary">
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    @await Component.InvokeAsync("AyudaCentroCosto")
+                </table>
             </div>
-            <div class="form-group">
-                <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
-                <span asp-validation-for="Fecha" class="text-danger"></span>
+            <div class="modal-footer">
+                <button id="btn_cerrar_modal_cco" type="button" class="btn btn-danger" data-bs-dismiss="modal">Retornar</button>
             </div>
-            <div class="form-group">
-                <label asp-for="TipoPago" class="control-label"></label>
-                <input asp-for="TipoPago" class="form-control" />
-                <span asp-validation-for="TipoPago" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CodCliente" class="control-label"></label>
-                <input asp-for="CodCliente" class="form-control" />
-                <span asp-validation-for="CodCliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
+<br />
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <table>
+        <thead></thead>
+    </table>
 </div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
