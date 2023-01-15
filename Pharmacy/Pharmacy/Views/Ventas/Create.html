@@ -13,6 +13,22 @@
     <label>Direccion</label><input type="text"/>
     <label>Telefono</label><input type="text"/>
 </div><br>
+<table>
+    <thead>
+        <tr>
+            <th>Subtotal</th>
+            <th>IGV</th>
+            <th>Descuento</th>
+            <th>Monto Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <td><input  id="" type="text"/></td>
+        <td><input  id="" type="text"/></td>
+        <td><input  id="" type="text"/></td>
+        <td><input  id="" type="text"/></td>
+    </tbody>
+</table><br><br>
 <button id="btn_abrir_modal_cco" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#Modal_Prd">Seleccione Producto </button>                           
 <div class="modal" id="Modal_Prd">
     <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -26,10 +42,11 @@
                     <tr class="table-primary">
                         <th>Codigo</th>
                         <th>Descripcion</th>
+                        <th>Stock</th>
                     </tr>
                     @await Component.InvokeAsync("AyudaCentroCosto")
                 </table>
-            </div>
+            </div><br/><br/>
             <div class="modal-footer">
                 <button id="btn_cerrar_modal_cco" type="button" class="btn btn-danger" data-bs-dismiss="modal">Retornar</button>
             </div>
@@ -41,12 +58,56 @@
 <div>
     <table>
         <thead>
-            <tr></tr>
+            <tr>
+                <th>Item</th>
+                <th>Producto</th>
+                <th>Presentacion</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>SubTotal</th>
+            </tr>
         </thead>
+        <tbody>
+            <tr id="tr_prd01">
+                <td>001</td>
+                <td><input id="Desc01" type="text" value="Aci Basic"/> </td>
+                <td><input id="Pres01" type="text" value="Botella 220ml"/></td>
+                <td><input id="Preu01" type="text" value="15.65"/></td>
+                <td><input id="Cant01" type="text" value="2"/></td>
+                <td><input id="Subt01" type="text" value="31.25"/></td>
+                <td><button class="btn btn-danger">Quitar</button></td>
+            </tr>
+            <tr id="tr_prd01">
+                <td>001</td>
+                <td><input id="Desc01" type="text" value="Aci Basic"/> </td>
+                <td><input id="Pres01" type="text" value="Botella 220ml"/></td>
+                <td><input id="Preu01" type="text" value="15.65"/></td>
+                <td><input id="Cant01" type="text" value="2"/></td>
+                <td><input id="Subt01" type="text" value="31.25"/></td>
+                <td><button class="btn btn-danger">Quitar</button></td>
+            </tr>
+            <tr id="tr_prd01">
+                <td>001</td>
+                <td><input id="Desc01" type="text" value="Aci Basic"/> </td>
+                <td><input id="Pres01" type="text" value="Botella 220ml"/></td>
+                <td><input id="Preu01" type="text" value="15.65"/></td>
+                <td><input id="Cant01" type="text" value="2"/></td>
+                <td><input id="Subt01" type="text" value="31.25"/></td>
+                <td><button class="btn btn-danger">Quitar</button></td>
+            </tr>
+            <tr id="tr_prd01">
+                <td>001</td>
+                <td><input id="Desc01" type="text" value="Aci Basic"/> </td>
+                <td><input id="Pres01" type="text" value="Botella 220ml"/></td>
+                <td><input id="Preu01" type="text" value="15.65"/></td>
+                <td><input id="Cant01" type="text" value="2"/></td>
+                <td><input id="Subt01" type="text" value="31.25"/></td>
+                <td><button class="btn btn-danger">Quitar</button></td>
+            </tr>
+        </tbody>
     </table>
 </div>
-
-
+<br/><br/><br/>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
