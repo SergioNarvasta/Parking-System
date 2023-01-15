@@ -18,6 +18,8 @@ namespace Pharmacy.Services
         Task<int> DevuelveReq(int cia, int suc, int epk, int uap);
         Task<string> ObtenerMaxRCO();
         Task<int> Registra_Req(RQCompra rQCompra);
+
+        Task<int> Registra_Venta(Venta venta)
     }
     public class RepositorioVenta:IRepositorioVenta
     {

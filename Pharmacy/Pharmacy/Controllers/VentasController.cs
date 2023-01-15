@@ -14,9 +14,12 @@ namespace Pharmacy.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public VentasController(ApplicationDbContext context)
+        private readonly IRepositorioRQCompra _repositorioRQCompra;
+
+        public VentasController(ApplicationDbContext context, IRepositorioRQCompra repositorioRQCompra;)
         {
             _context = context;
+            _repositorioRQCompra = repositorioRQCompra;
         }
         public async Task<IActionResult> Index()
         {
@@ -43,15 +46,9 @@ namespace Pharmacy.Controllers
             return View();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Codventa,Descuento,Total,Fecha,TipoPago,CodCliente")] Venta venta)
+        public async Task<IActionResult> Registrar_Venta(Venta venta)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(venta);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            int result = await _repositorioRQCompra.Registra_Venta(venta);
             return View(venta);
         }
         public async Task<IActionResult> Edit(int? id)
