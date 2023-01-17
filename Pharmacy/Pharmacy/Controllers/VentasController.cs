@@ -13,7 +13,6 @@ namespace Pharmacy.Controllers
     public class VentasController : Controller
     {
         private readonly ApplicationDbContext _context;
-
         private readonly IRepositorioRQCompra _repositorioRQCompra;
 
         public VentasController(ApplicationDbContext context, IRepositorioRQCompra repositorioRQCompra;)
@@ -26,7 +25,7 @@ namespace Pharmacy.Controllers
         {
               return View(await _context.Venta.ToListAsync());
         }
-        
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Venta == null)
