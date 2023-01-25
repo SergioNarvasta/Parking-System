@@ -25,7 +25,8 @@ namespace Pharmacy.Controllers
         {
               return View(await _context.Venta.ToListAsync());
         }
-
+        
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Venta == null)
