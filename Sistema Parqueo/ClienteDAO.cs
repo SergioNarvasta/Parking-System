@@ -29,8 +29,8 @@ namespace Sistema_Parqueo
                                 ObjCliente.placClie + "','" +
                                 ObjCliente.modeClie + "','" +
                                 ObjCliente.coloClie + "','" +
-                                 fechaingreso + "','" +
-                                 HoraIngreso + "') ";
+                                fechaingreso + "','" +
+                                HoraIngreso + "') ";
 
                 SqlCommand ObjSqlComand = new SqlCommand(sentencia, ObjSqlConnection);
                 ObjSqlComand.ExecuteNonQuery();
@@ -88,12 +88,12 @@ namespace Sistema_Parqueo
                   SqlConnection ObjSqlConnection = AdministradorDeConexion.getConexion();
                   ObjSqlConnection.Open();
                   string sentencia = "UPDATE Cliente SET nombClie ='" + ObjCliente.nombClie + "'," +
-                                                         "dniClie ='" + ObjCliente.dniClie + "'," +
-                                                         "telfClie ='" + ObjCliente.telfClie + "'," +
-                                                         "placClie ='" + ObjCliente.placClie + "'," +
-                                                         "modeClie ='" + ObjCliente.modeClie + "'," +
-                                                         "coloClie = '" + ObjCliente.coloClie  +"'"+
-                                                         " WHERE dniClie =" + busqueda;
+                                        "dniClie ='" + ObjCliente.dniClie + "'," +
+                                        "telfClie ='" + ObjCliente.telfClie + "'," +
+                                        "placClie ='" + ObjCliente.placClie + "'," +
+                                        "modeClie ='" + ObjCliente.modeClie + "'," +
+                                        "coloClie = '" + ObjCliente.coloClie  +"'"+
+                                        " WHERE dniClie =" + busqueda;
                   SqlCommand ObjSqlCommand = new SqlCommand(sentencia, ObjSqlConnection);
                   ObjSqlCommand.ExecuteNonQuery();
                   ObjSqlConnection.Close();
@@ -136,7 +136,7 @@ namespace Sistema_Parqueo
                 return false;
             }
         }*/
-        ////////////////////////////
+        
 
         public int buscarRegistro(int busqueda)
         {
@@ -204,17 +204,18 @@ namespace Sistema_Parqueo
                 Cliente ObjCliente;
                 while (ObjSqlDataReader.Read())
                 {
-                    ObjCliente = new Cliente();
-
-                    ObjCliente.codiClie = (int)ObjSqlDataReader["codiClie"];
-                    ObjCliente.nombClie = (String)ObjSqlDataReader["nombClie"];
-                    ObjCliente.dniClie = (int)ObjSqlDataReader["dniClie"];
-                    ObjCliente.telfClie = (String)ObjSqlDataReader["telfClie"];
-                    ObjCliente.placClie = (String)ObjSqlDataReader["placClie"];
-                    ObjCliente.modeClie = (String)ObjSqlDataReader["modeClie"];
-                    ObjCliente.coloClie = (String)ObjSqlDataReader["coloClie"];
-                    ObjCliente.fechClie = (String)ObjSqlDataReader["fechClie"];
-                    ObjCliente.horaClie = (String)ObjSqlDataReader["horaClie"];
+                    ObjCliente = new Cliente
+                    {
+                        codiClie = (int)ObjSqlDataReader["codiClie"],
+                        nombClie = (String)ObjSqlDataReader["nombClie"],
+                        dniClie = (int)ObjSqlDataReader["dniClie"],
+                        telfClie = (String)ObjSqlDataReader["telfClie"],
+                        placClie = (String)ObjSqlDataReader["placClie"],
+                        modeClie = (String)ObjSqlDataReader["modeClie"],
+                        coloClie = (String)ObjSqlDataReader["coloClie"],
+                        fechClie = (String)ObjSqlDataReader["fechClie"],
+                        horaClie = (String)ObjSqlDataReader["horaClie"]
+                    };
                     ObjListCliente.Add(ObjCliente);
                 }
                 ObjSqlDataReader.Close();

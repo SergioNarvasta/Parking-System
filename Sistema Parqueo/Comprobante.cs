@@ -18,7 +18,7 @@ namespace Sistema_Parqueo
         public string descuento { get; set; }
         public double mont_comp { get; set; }
 
-       public Comprobante() { }
+        public Comprobante() { }
 
         public Comprobante(int idcomp,string feccomp,string codiclie,string nombclie,string horaingr,string horasali,string tiempouso,string descuentoCom, double monto)
         {
