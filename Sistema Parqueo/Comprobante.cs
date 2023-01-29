@@ -32,7 +32,6 @@ namespace Sistema_Parqueo
             descuento = descuentoCom;
             mont_comp = monto;
         }
-
     }
    
 }

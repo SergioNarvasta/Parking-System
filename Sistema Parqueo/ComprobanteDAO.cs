@@ -95,9 +95,9 @@ namespace Sistema_Parqueo
                 SqlConnection oSqlConnection = AdministradorDeConexion.getConexion();
                 oSqlConnection.Open();
                 string sentencia = "UPDATE Comprobante SET  fech_comp    = '" + objComprobante.fech_comp + "', " +
-                                                                 "codi_clie =  " + objComprobante.codi_clie + ", " +
-                                                                 "nomb_clie =  " + objComprobante.nomb_clie + ", " +
-                                                                 "mont_comp  =  " + objComprobante.mont_comp +
+                                     "codi_clie =  " + objComprobante.codi_clie + ", " +
+                                     "nomb_clie =  " + objComprobante.nomb_clie + ", " +
+                                     "mont_comp  =  " + objComprobante.mont_comp +
 
                                                                  " WHERE id_comp   =  " + busqueda;
                 SqlCommand oSqlCommand = new SqlCommand(sentencia, oSqlConnection);
@@ -161,7 +161,6 @@ namespace Sistema_Parqueo
             }
 
         }*/
-
        
     }
 }

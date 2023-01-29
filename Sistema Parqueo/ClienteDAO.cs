@@ -20,9 +20,7 @@ namespace Sistema_Parqueo
                 ObjSqlConnection = AdministradorDeConexion.getConexion();
                 ObjSqlConnection.Open();
                 String fechaingreso= DateTime.Now.ToString("dd/MM/yyyy");
-                String HoraIngreso = DateTime.Now.ToString("hh:mm:ss");
-                //DateTime HoraIngreso = DateTime.Today;
-              // HoraIngreso = ObjCliente.fechClie;
+                String HoraIngreso = DateTime.Now.ToString("hh:mm:ss");             
                 String sentencia = "INSERT INTO Cliente(nombClie,dniClie,telfClie,placClie,modeClie,coloClie,fechClie,horaClie) values(' " +
                                 //ObjCliente.codiClie + "','" +
                                 ObjCliente.nombClie + "','" +
@@ -82,7 +80,7 @@ namespace Sistema_Parqueo
             }
             return null;
         }
-        /////////////////////////////////////
+        
           public Boolean modificarRegistro(int busqueda, Cliente ObjCliente)
           {
               try
@@ -95,8 +93,6 @@ namespace Sistema_Parqueo
                                                          "placClie ='" + ObjCliente.placClie + "'," +
                                                          "modeClie ='" + ObjCliente.modeClie + "'," +
                                                          "coloClie = '" + ObjCliente.coloClie  +"'"+
-                                                          //"fechClie = " + ObjCliente.fechClie+
-                                                         //"horaClie = "+ObjCliente.horaClie+
                                                          " WHERE dniClie =" + busqueda;
                   SqlCommand ObjSqlCommand = new SqlCommand(sentencia, ObjSqlConnection);
                   ObjSqlCommand.ExecuteNonQuery();
