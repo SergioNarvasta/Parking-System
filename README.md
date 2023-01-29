@@ -1,32 +1,3 @@
-Pharmacy System currently developed with C# .NET 6, Entity Framework Core,
-Dapper, DevExpress, Swagger, JasperReports, SQL Server. Contains the modules: 
+# ParkingSystem
 
--User Management
-
--Customer Management
-
--Product Management
-
--Services Managment
-
--Supplier Management
-
--Warehouse management
-
--Sales management
-
--Purchasing Management
-
--Cash Management
-
--Kardex movements
-
--Product Transaction
-
--Electronic billing
-
--Reports
-
-
-
-Update: snarvasta 081122
+Implementation of a parking system, currently being developed in C#, ASP.NET, JasperReports and SQL Server, soon implementation of Azure SQL Database
