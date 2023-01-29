@@ -14,7 +14,6 @@ namespace Sistema_Parqueo
     public partial class Generar_Comprobante : Form
     {
         readonly SqlConnection conex = AdministradorDeConexion.getConexion();
-        //SqlConnection conex = new SqlConnection("Data Source=(local);Initial Catalog=dbparqueo;Integrated Security=True");
         public Generar_Comprobante()
         {
             InitializeComponent();
@@ -27,7 +26,6 @@ namespace Sistema_Parqueo
 
         private void horaSalida()
         {
-            //DateTime a = DateTime.Now;
             String HoraIngreso = DateTime.Now.ToString("HH:mm:ss");
             txtHoraSali.Text = HoraIngreso;
             txtCodiClie.Focus();
@@ -35,9 +33,6 @@ namespace Sistema_Parqueo
         
         private void operacionHora()
         {
-            //double hoIngre = Convert.ToInt16(txtHoraIngreso);
-            //double hoSali = Convert.ToDouble(txtHoraSali);
-
             TimeSpan tiemI = TimeSpan.Parse(txtHoraIngreso.Text);
             TimeSpan tiemS = TimeSpan.Parse(txtHoraSali.Text);
             TimeSpan resta = tiemS - tiemI;
