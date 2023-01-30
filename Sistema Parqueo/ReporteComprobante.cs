@@ -15,9 +15,7 @@ namespace Sistema_Parqueo
         public ReporteComprobante()
 
         {
-
             InitializeComponent();
-
         }
         private void ReporteComprobante_Load(object sender, EventArgs e)
         {

@@ -20,7 +20,6 @@ namespace Sistema_Parqueo
                 oSqlConnection.Open();
 
                 String sentencia = "INSERT INTO Comprobante(  fech_comp , codi_clie , nomb_clie ,hora_ingreso,hora_salida,tiempo_uso,descuento, mont_comp) values('" +
-                                    //objComprobante.id_comp + "','" +
                                     fechasalida + "','" +
                                     objComprobante.codi_clie + "','" +
                                     objComprobante.nomb_clie + "','" +
@@ -50,7 +49,6 @@ namespace Sistema_Parqueo
             SqlCommand oSqlCommand = new SqlCommand(comande, oSqlConnection);
             oSqlCommand.ExecuteNonQuery();
             oSqlConnection.Close();
-
         }
 
         public Comprobante consultarRegistro(int busqueda)

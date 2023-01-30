@@ -24,7 +24,6 @@ namespace Sistema_Parqueo
         public Cliente getObjetoCliente()
         {
             Cliente oCliente = new Cliente();
-            ///oCliente.codiClie = int.Parse( txtCodiClie.Text);
             oCliente.nombClie = txtNombClie.Text;
             oCliente.dniClie = int.Parse(txtDNI.Text);
             oCliente.telfClie = txtTeleClie.Text;
@@ -35,8 +34,7 @@ namespace Sistema_Parqueo
         }
 
         public void setObjetoCliente(Cliente oCliente)
-        {
-           
+        {         
             txtNombClie.Text = oCliente.nombClie + "";
             txtDNI.Text = oCliente.dniClie + "";
             txtTeleClie.Text = oCliente.telfClie + "";
