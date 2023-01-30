@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Sistema_Parqueo
 {
     public class Comprobante
@@ -18,7 +13,7 @@ namespace Sistema_Parqueo
         public string descuento { get; set; }
         public double mont_comp { get; set; }
 
-       public Comprobante() { }
+        public Comprobante() { }
 
         public Comprobante(int idcomp,string feccomp,string codiclie,string nombclie,string horaingr,string horasali,string tiempouso,string descuentoCom, double monto)
         {
@@ -32,7 +27,6 @@ namespace Sistema_Parqueo
             descuento = descuentoCom;
             mont_comp = monto;
         }
-
     }
    
 }
